@@ -544,11 +544,46 @@ body .Home .home-content .start-btn:hover {
     pointer-events: all;
   }
   body .main .container .quiz-section .quiz-box {
-    width: 95%;
+    width: 100%;
     height: 100%;
   }
+  body .main .container .quiz-section .quiz-box h1 {
+    margin-bottom: 10%;
+  }
+  body .main .container .quiz-section .quiz-box .quiz-header {
+    margin-bottom: 20%;
+  }
+  body .main .container .quiz-section .quiz-box.active {
+    position: absolute;
+    padding-top: 17%;
+  }
+  body .main .container .quiz-section .quiz-box .quiz-footer {
+    margin-top: 16%;
+    flex-direction: column;
+    width: 100%;
+  }
+  body .main .container .quiz-section .quiz-box .quiz-footer .next-btn {
+    margin-top: 5%;
+    width: 100%;
+  }
   body .main .container .quiz-section .result-box {
-    width: 90%;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding-top: 40px;
+  }
+  body .main .container .quiz-section .result-box h2 {
+    margin-bottom: 20%;
+  }
+  body .main .container .quiz-section .result-box .buttons {
+    flex-direction: column;
+    margin-top: 28%;
+    width: 100%;
+    align-items: center;
+  }
+  body .main .container .quiz-section .result-box .buttons button {
+    width: 100%;
+    padding: 15px;
   }
   body .main .container .Home {
     left: 0;
@@ -557,6 +592,24 @@ body .Home .home-content .start-btn:hover {
     font-size: 47px;
   }
   body .popup-info {
-    width: 90%;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5%;
+  }
+  body .popup-info .btn-group {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding-top: 25px;
+  }
+  body .popup-info .btn-group .info-btn {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

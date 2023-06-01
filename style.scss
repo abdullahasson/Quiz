@@ -635,12 +635,55 @@ body {
                     }
 
                     .quiz-box {
-                        width: 95%;
+                        width: 100%;
                         height: 100%;
+
+                        h1 {
+                            margin-bottom: 10%;
+                        }
+
+                        .quiz-header {
+                            margin-bottom: 20%;
+                        }
+
+                        &.active {
+                            position: absolute;
+                            padding-top: 17%;
+                        }
+
+                        .quiz-footer {
+                            margin-top: 16%;
+                            flex-direction: column;
+                            width: 100%;
+
+                            .next-btn {
+                                margin-top: 5%;
+                                width: 100%;
+                            }
+                        }
                     }
 
                     .result-box {
-                        width: 90%;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 0;
+                        padding-top: 40px;
+
+                        h2 {
+                            margin-bottom: 20%;
+                        }
+
+                        .buttons {
+                            flex-direction: column;
+                            margin-top: 28%;
+                            width: 100%;
+                            align-items: center;
+
+                            button {
+                                width: 100%;
+                                padding: 15px;
+                            }
+                        }
                     }
                 }
                 
@@ -657,7 +700,27 @@ body {
         }
         
         .popup-info {
-            width: 90%;
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 5%;
+
+            .btn-group {
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+                padding-top: 25px;
+
+                .info-btn {
+                    width: 100%;
+                }
+            }
         }
     }
 }
