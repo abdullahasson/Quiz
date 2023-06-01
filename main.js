@@ -8,7 +8,12 @@ const quizBox = document.querySelector(`.quiz-box`)
 const resultBox = document.querySelector(`.result-box`)
 const tryAgain = document.querySelector(`.tryAgain-btn`)
 const goHome = document.querySelector(`.goHome-btn`)
+const icon = document.querySelector(`.listIcon`)
+const navbar = document.querySelector(`.main nav`)
 
+icon.onclick = () => {
+    navbar.classList.toggle("active")
+}
 
 
 startBtn.onclick = () => {

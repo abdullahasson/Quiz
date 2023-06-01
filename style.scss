@@ -19,6 +19,12 @@ body {
         background-size: cover;
         transition: .3s;
 
+        i {
+            display: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
         &.active {
             filter: blur(15px);
             -webkit-filter: blur(15px);
@@ -370,7 +376,7 @@ body {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         padding: 20px 10%;
         background-color:transparent;
         display: flex;
@@ -556,10 +562,102 @@ body {
 }
 
 
-.asdfsdFS{
-    transition: .3s;
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    -ms-transition: .3s;
-    -o-transition: .3s;
+// Responsive 
+
+@media (max-width: 767px) {
+    body {
+        .main {
+
+            i {
+                display: block;
+            }
+    
+            nav {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #09001d;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 60%;
+                padding: 20px;
+                pointer-events: none;
+                opacity: 0;
+                transition: .4s;
+                border-radius: 10px;
+    
+                &.active {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+    
+    
+                a {
+                    margin: 0 0 10px 0;
+                }
+            }
+        } 
+        
+        .Home {
+            .home-content {
+                padding: 20px;
+                h1 {
+                    font-size: 58px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 490px) {
+    body {
+        .main {
+            .container {
+                width: 100%;
+
+                .quiz-section {
+                    position: absolute;
+                    left: 0;
+                    opacity: 0;
+                    pointer-events: none;
+                    min-height: 100vh;
+
+
+                    &.active {
+                        opacity: 1;
+                        pointer-events: all;
+                    }
+
+                    .quiz-box {
+                        width: 95%;
+                        height: 100%;
+                    }
+
+                    .result-box {
+                        width: 90%;
+                    }
+                }
+                
+                .Home {
+                    left: 0;
+
+                    .home-content {
+                        h1 {
+                            font-size: 47px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .popup-info {
+            width: 90%;
+        }
+    }
 }
