@@ -545,7 +545,7 @@ body .Home .home-content .start-btn:hover {
   }
   body .main .container .quiz-section .quiz-box {
     width: 100%;
-    height: 100dvh;
+    height: 100svh;
   }
   body .main .container .quiz-section .quiz-box h1 {
     margin-bottom: 10%;
@@ -593,7 +593,7 @@ body .Home .home-content .start-btn:hover {
   }
   body .popup-info {
     width: 100%;
-    height: 100dvh;
+    height: 100svh;
     border-radius: 0;
     border: none;
     display: flex;
