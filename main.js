@@ -164,13 +164,17 @@ function showResult() {
     let progressEndValue = (userScore / questions.length) * 100;
     let speed = 50;
 
-    let progress = setInterval(() => {
-        progressStartValue++;
-        progressValue.textContent = `${progressStartValue}%`;
-
-        cercleProgress.style.background = `conic-gradient(#c40094 ${progressStartValue * 3.6}deg , rgba(255 , 255 , 255 , .1) 0deg)`
-        if (progressStartValue == progressEndValue) {
-            clearInterval(progress)
-        }
-    } , speed)
+    if (progressEndValue == 0) {
+        console.log("sadfasd")
+    } else {
+        let progress = setInterval(() => {
+            progressStartValue++;
+            progressValue.textContent = `${progressStartValue}%`;
+    
+            cercleProgress.style.background = `conic-gradient(#c40094 ${progressStartValue * 3.6}deg , rgba(255 , 255 , 255 , .1) 0deg)`
+            if (progressStartValue == progressEndValue) {
+                clearInterval(progress)
+            }
+        } , speed)
+    }
 }
