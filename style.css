@@ -569,6 +569,7 @@ body .Home .home-content .start-btn:hover {
   body .main .container .quiz-section .quiz-box .quiz-footer .next-btn {
     margin-top: 5%;
     width: 100%;
+    font-size: 21px;
   }
   body .main .container .quiz-section .result-box {
     width: 100%;
@@ -587,7 +588,7 @@ body .Home .home-content .start-btn:hover {
   }
   body .main .container .quiz-section .result-box .buttons button {
     width: 100%;
-    padding: 15px;
+    font-size: 21px;
   }
   body .main .container .Home {
     left: 0;
@@ -602,7 +603,8 @@ body .Home .home-content .start-btn:hover {
     border: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 25px;
     align-items: center;
     box-sizing: border-box;
     padding: 5%;
@@ -615,5 +617,7 @@ body .Home .home-content .start-btn:hover {
   }
   body .popup-info .btn-group .info-btn {
     width: 100%;
+    padding: 27px;
+    font-size: 21px;
   }
 }/*# sourceMappingURL=style.css.map */
